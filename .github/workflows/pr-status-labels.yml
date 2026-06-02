@@ -26,23 +26,6 @@ jobs:
             const issue_number = context.payload.pull_request?.number || context.payload.issue?.number;
             if (!issue_number) return;
 
-            const codexLabels = [
-              'codex:needs-review',
-              'codex:review-requested',
-              'codex:reviewed',
-              'codex:needs-rerun',
-              'codex:setup-issue',
-            ];
-            const statusLabels = [
-              'status: 📣 needs proof',
-              'status: 🔁 re-review loop',
-              'status: 🛠️ actively grinding',
-              'status: 👀 ready for maintainer look',
-              'status: ⏳ waiting on author',
-              'status: ✅ merge-ready',
-              'status: 🚧 blocked',
-            ];
-
             async function addLabels(labels) {
               const unique = [...new Set(labels)].filter(Boolean);
               if (!unique.length) return;
