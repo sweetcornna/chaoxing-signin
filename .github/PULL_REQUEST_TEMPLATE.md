@@ -38,3 +38,13 @@ Rollback plan:
 ## Linked Issues
 
 <!-- Example: Closes #123 -->
+
+## Codex Review and PR Labels
+
+- [ ] This PR is ready for automatic Codex review.
+- [ ] After pushing follow-up commits, I will request a fresh review with `@codex review` if the automatic run is stale.
+- [ ] I checked the newest Codex/bot comments before deciding the PR status.
+- [ ] I applied proof/risk/status labels when they help reviewers scan the PR.
+
+Useful labels:
+`codex:needs-review`, `codex:review-requested`, `codex:reviewed`, `codex:needs-rerun`, `codex:setup-issue`, `status: 📣 needs proof`, `status: 🔁 re-review loop`, `status: 👀 ready for maintainer look`, `status: ⏳ waiting on author`, `proof: supplied`, `proof: sufficient`.
